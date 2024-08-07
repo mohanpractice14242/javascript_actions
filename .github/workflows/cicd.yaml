@@ -12,7 +12,9 @@ jobs:
         uses: actions/checkout@v3
       - name: install the nodejs 
         uses: actions/setup-node@v4 
-      - name: install the depedecnies 
+      - name: install the depedecnies  
         run: npm install --save-dev jest babel-jest @testing-library/react @testing-library/jest-dom
-
-      
+      - name: clonign the test repository 
+        run : git clone https://github.com/mohantest14242/JS_testing.git
+      - name: displyin the all the files 
+        run: ls -l
