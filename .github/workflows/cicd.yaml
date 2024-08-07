@@ -13,5 +13,6 @@ jobs:
       - name: install the nodejs 
         uses: actions/setup-node@v4 
       - name: install the depedecnies 
-        run: npm install 
+        run: npm install --save-dev jest babel-jest @testing-library/react @testing-library/jest-dom
+
       
