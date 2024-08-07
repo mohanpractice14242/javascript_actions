@@ -1,0 +1,17 @@
+name: create the docker image 
+
+on: 
+  push: 
+    branches:
+      - main 
+jobs: 
+  build-pushdocker: 
+    runs-on: ubuntu-latest 
+    steps:
+      - name: checkout the code 
+        uses: actions/checkout@v3
+      - name: install the nodejs 
+        uses: actions/setup-node@v4 
+      - name: install the depedecnies 
+        run: npm install 
+      
